@@ -435,23 +435,24 @@ function submit(){
                 }
         }
         if(isimg){
-            let index=0;
-            console.log(imgdata);
-            for(each of imgdata){
+            for(let index=0;index<imgnum;index++){
                 let type=imgdata.get(`${index}`).type.split("/")[1];
                 let eachdata=new FormData();
                 eachdata.append(`postimg`,imgdata.get(`${index}`));
+                console.log(eachdata.get(`postimg`));
+                console.log(type);
+                let imagenum=index+1;
             if(type){
                 let head={
                     "Content-Type": "multipart/form-data;boundary=WebAppBoundary",
-                    "Content-Disposition": `form-data; name='file'; filename=${imgdata.get(`${index}`).name}`
+                    "Content-Disposition": `form-data; name='file'; filename="1"`
                 }
-                fetch(`http://39.97.228.101:8080/kuro/src/photo/${emid}/${index+1}?skey=${skey}&filetype=${type}`,{
+                fetch(`http://39.97.228.101:8080/kuro/src/photo/${emid}/${imagenum}?skey=${skey}&filetype=${type}`,{
                     method:"POST",
                     headers:head,
                     body:eachdata
                 }).then(res => res.json()).then(function (response){
-                console.log(response);index++;
+                console.log(response);
                     })
             }
             }

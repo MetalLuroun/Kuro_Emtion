@@ -3,7 +3,7 @@ window.onload = main()
 function main (){
     let skey = window.location.href.split('=')[1]
     getPostiveEmotionList(skey)
-    
+    searchEmotion(skey)
 }
 
 function getPostiveEmotionList(skey){
@@ -11,11 +11,28 @@ function getPostiveEmotionList(skey){
     .then(res => res.json())
     .then(function(res){
         res = eval(res)
-        
         drawEmotion(res.data)
     })
 }
-
+function searchEmotion(skey){
+    let searchInput = document.getElementById('searchText')
+    let searchBtn = document.getElementById('searchBtn')
+    
+    let emo = document.getElementById('emo')
+    searchBtn.addEventListener('click',function(){
+        let text = searchInput.value
+        console.log(text)
+        fetch("http://39.97.228.101:8080/kuro/emotions?skey="+skey+"&type=&content="+text+"&page=&rank=1&search="+"&full=")
+        .then(res => res.json())
+        .then(function(res){
+        res = eval(res)
+        emo.innerHTML = ''
+        console.log(res)
+        drawEmotion(res.data)
+    })
+    })
+    
+}
 // function searchEmotion(skey){
 //     fetch("http://39.97.228.101:8080/kuro/emotions?skey="+skey+"&type=&content=&page=&rank=1&search="+"&full=")
 //     .then(res => res.json())
@@ -28,7 +45,7 @@ function getPostiveEmotionList(skey){
 // }
 function drawEmotion(res){
     posEmoNum = res.num
-    console.log(res)
+    
     emo = document.getElementById('emo')
     for(let i = 0 ; i < posEmoNum;i++){
         
