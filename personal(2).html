@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./stylesheet/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="./stylesheet/personal.css">
+    <script src="https://kit.fontawesome.com/b818d1f379.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class='header'>
+        <i class="fas fa-arrow-left">首页</i>
+    </header>
+    <content class='content'>
+        <div id='personalinf'>
+            <div id='avatarbox'>
+                <img src="./image/1.jpeg" id='avatar'>
+            </div>
+            <div id='d1' >
+                <h6>更换头像</h6>
+            </div>
+            <div id='idbox'>
+                <h4 contenteditable="false">用户昵称</h4>
+                <img src="./Design/铅笔@3x.png" id='changeName'>
+            </div>
+            <div id='emobox'>
+                <h3>121</h3>
+                <img src="./Design/androidsunny@3x.png">
+            </div>
+            <div id='d2'>
+                <h3>心情指数</h3>
+            </div>
+        </div>
+        <div id='featurebox'>
+            <div class='choicebox' id='emoVision' onclick = "changeTo('emoVision')">
+                <img src='./Design/keshihua@3x.png'>
+                <p>心情可视化</p>
+            </div>
+            <div class='choicebox' id ='posEmosite' onclick = "changeTo('posEmosite')">
+                <img src="./Design/androidsunny@3x.png">
+                <p>快乐时光簿</p>
+            </div>
+            <div class='choicebox' id='negEmosite' onclick = "changeTo('negEmosite')">
+                <img src='./Design/cry@3x.png'>
+                <p>负情绪小站</p>
+            </div>
+        </div>
+    </content>
+    <footer class='footer '>
+        <div class='footerbutton'>
+                <img src='./Design/kongpingzi@3x.png' id='dl' onclick = "changeTo('emoCatch')" class='footericon'>
+                <p>打捞</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/wenzhang-3@3x.png' id='jl' onclick="turnTo('write')" class='footericon'>
+            <p>记录</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/资源-2@3x.png' id='wd'  class='footericon'>
+            <p>我的</p>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/personal.js"></script>
+<script src="func.js"></script>
+</html>

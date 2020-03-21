@@ -1,0 +1,108 @@
+body{
+    background: url('../background/心情可视化背景.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;   
+    height: 10vh;
+    font-size: 18px;
+    color: #6A6A6A;
+    align-items: center;
+}
+.header *{
+    margin: 1em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    color:   #5C5C5C;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: absolute;
+    z-index:2;
+}
+#personinf{
+    width: 100vw;
+    height:20vh;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#personinf div{
+    text-align: center;
+}
+#featurebox{
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    border-radius: 3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6E670;
+}
+#emo{
+    width: 16vw;
+    height: 16vw;
+    border-radius: 11vw;
+    background-color: #D5D5CF;
+    border:5px solid #BAAAA4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#person{
+    width: 50vw;
+}
+#cosume{
+    justify-self: center;
+    text-align: center;
+    width: 65%;
+}
+canvas{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#wiki {
+    position: absolute;
+    width: 100vw;
+    display: flex hide;
+    align-items: center;
+    justify-content: center;
+}
+#img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 80vw;
+    height: 75vh;
+    background-color: #BDD9D1;
+    border-radius: 2vw;
+    display: inherit;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: inherit;
+}
+#wikiContent{
+    background-color: #E0EDE9;
+    margin: 2vw;
+    border-radius: 2vw;
+    overflow: auto;
+}
+#title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="./stylesheet/emoVision.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b818d1f379.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class='header'>
+        <i class="fas fa-arrow-left" id='backToIndex' onclick="changeTo('personal')" >心情可视化</i>
+        <div id='emo'>
+            <h3>121</h3>
+        </div>
+    </header>
+    <content class='content' id='contentBox' >
+        <div id='featurebox'>
+            <h2>心情分布图(天)</h2>
+            <canvas id='emoDayGra' >
+
+            </canvas>
+            <h2>心情分布图(月累计)</h2>
+            <canvas id = 'emoMonGra'>
+    
+            </canvas>
+            <h2 id='cosume'>累计粉碎了12条坏心情,悦纳了7条坏心情</h2>
+        </div>
+    </content>
+    <article id='wiki' class='hide'>
+        <div id=container>
+            <div id='title'>
+                <i class="fas fa-arrow-left" id='back'></i>
+                <h2>这是一段标题</h2>
+            </div>
+            <div id = wikiContent>
+                <div id='img'>
+                    <img src="./image/1.jpeg"> 
+                </div>
+                <div id='article'>
+                    <p>这是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字这是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字</p>
+                    <p>这是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字这是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字</p>
+                    <p>这是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字这是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字是一段实例文字</p>
+
+                </div>
+            </div>
+           
+        </div>
+    </article>
+    <footer class='footer '>
+        <div class='footerbutton'>
+            <img src='./Design/kongpingzi@3x.png' id='dl' onclick = "changeTo('emoCatch')" class='footericon'>
+            <p>打捞</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/wenzhang-3@3x.png' id='jl' onclick="turnTo('write')" class='footericon'>
+            <p>记录</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/资源-2@3x.png' id='wd'  class='footericon'>
+            <p>我的</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/emoVision.js"></script>
+<script src="func.js">
+</script>
+</html>

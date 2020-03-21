@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+}
+
+.header{
+    display: inline-flex;
+    height: 20vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.footer{
+    display: inline-flex;
+    height: 10vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+}
+
+.footerbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 3em;
+}
+.footerbutton *{
+    margin: 1vw;
+}
+.content{
+    width: 100vw;
+}
+.icon{
+    width: 2em;
+    height: 2em;
+}
+.hide{
+    display: none;
+}
+.footericon{
+    width: 2em;
+    height: 2em;
+}
+.footer::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+#p1{
+    position: relative;
+    font-size: 1.3em;
+    top: -3vh;
+    left: -2vw;
+}
+#h1{
+    position: relative;
+    font-size: 2em;
+}
+#p2{
+    position: relative;
+    left: 4vw;
+    top: 3vh;
+    font-size: 1.3em;
+}

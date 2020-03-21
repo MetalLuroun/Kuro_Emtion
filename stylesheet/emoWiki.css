@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    justify-content: start;
+    height: 20vh;
+}
+.content{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    background-color: brown;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+#personinf{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+#personinf div{
+    width: 50%;
+    text-align: center;
+}
+#wiki{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    height: 70vh;
+}

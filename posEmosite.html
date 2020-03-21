@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href = './stylesheet/stylesheet.css'>
+    <link type="text/css" rel="stylesheet" href = './stylesheet/posEmosite.css'>
+    <script src="https://kit.fontawesome.com/b818d1f379.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src='./Design/less @3x.png' id='back' onclick = "changeTo('personal')">
+        <div>
+            <img src='./Design/组 23@3x.png'>
+            <img src="./Design/chilun@3x.png">
+        </div>
+    </header>
+    <content id = 'content'>
+        <div id='search'>
+            <div id= 'searchInput'>
+                <i class="fas fa-search"></i>
+                <input placeholder="请输入关键词">
+            </div>
+            <p>搜索</p>
+        </div>
+        <div id = 'emo'>
+            <!-- <div id = 'emoBox'>
+                <div id = 'time'>
+                    <h3>03</h3>
+                    <p>周四</p>
+                    <p>12:43</p>
+                </div>
+                <div id = rightBox>
+                    <div id = 'emoContent'>
+                        <img id = 'voice' src="./Design/huatong@3x.png">
+                        <p id =' text'>看到了大海!看到了大海!看到了大海!</p>
+                        <img id = 'image' src="./Design/fcfcc-1@3x.png">
+                    </div>
+                    <div id = 'emoStar'>
+                        <h3>12</h3>
+                        <img src='./Design/x@3x.png'>
+                        <img src='./Design/x@3x.png'>
+                        <img src='./Design/x@3x.png'>
+                        <img src='./Design/xing@3x.png'>
+                        <img src='./Design/xing@3x.png'>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </content>
+    <footer class='footer '>
+        <div class='footerbutton'>
+            <img src='./Design/kongpingzi@3x.png' id='dl' onclick = "changeTo('emoCatch')" class='footericon'>
+            <p>打捞</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/wenzhang-3@3x.png' id='jl' onclick="turnTo('write')" class='footericon'>
+            <p>记录</p>
+        </div>
+        <div class='footerbutton'>
+                <img src='./Design/资源-2@3x.png' id='wd'  class='footericon'>
+                <p>我的</p>
+        </div>
+    </footer>
+</body>
+
+<script src="./js/posEmosie.js"></script>
+<script src="func.js">
+</script>
+</html>

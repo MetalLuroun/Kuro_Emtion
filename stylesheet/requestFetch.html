@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        let data={"id":1,"password":`${'1'}`};
+
+        fetch('http://39.97.228.101:8080/kuro/login',{
+            method:"POST",
+            body:JSON.stringify(data),
+        }).then(res => res.json()).then(function(response){
+            response = eval(response);
+            skey = response.skey 
+            console.log(skey)
+        })
+
+    </script>
+</head>
+<body>
+    <div id= 'box'>
+        ohshit
+    </div>
+</body>
+</html>

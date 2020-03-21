@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset = 'utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+*{margin:0;padding:0;font-size: 14px;box-sizing: border-box;user-select: none;}
+a{text-decoration: none;display: block;}
+button{display: block;}
+ul{list-style: none;}
+input{display:inline-block;outline: none;}
+@font-face {
+    font-family:kuro;
+    src:url("source/kuro.ttf");
+}
+body{
+    width: 100%;
+    height:100%;
+    background-image: url(source/背景2.png);
+    background-position:top center;
+    background-size: cover;
+    overflow: hidden;
+}   
+#login>form{
+    display:block;
+    margin:20vh auto;
+    width: 80vw;
+    height: 50vh;
+    background-color: rgba(225,225,225,0.3);
+    border-radius: 3vh;
+    text-align: center;
+}
+#login>form>input{
+    width: 70vw;
+    height:8vh;
+    margin:1vh auto;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgba(255,255,255,0.3);
+}
+#login>form>.tip2{
+    font-size:12px;
+    color:white;
+}
+#login input[type="checkbox"]{
+    width: 4vw;
+    height: 4vw;
+}
+#login>.submit{
+    margin:auto;
+    width:20vw;
+    height:5vh;
+    font-size: 14px;
+    background-color: darkred;
+    border-radius: 2vh;
+    text-align: center;
+    line-height: 5vh;
+}
+</style>
+</head>
+<body>
+<div id="login">
+    <form>
+        <input type="text" name="account" placeholder="帐号" maxlength="11"><br/>
+        <input type="password" name="password" placeholder="密码" minlength="6" maxlength="16"><br/>
+        <div class="tip2">输入的帐号或密码不正确，请重新输入！</div>
+        <input type="checkbox" checked="checked"><label onclick="postAdmit()">我已查看并同意相关协议</label>
+        <div class="submit" onclick="login()">登录</div>
+    </form>
+</div>
+<script>
+function checkStatus(response){
+    if (response.status >= 200 && response.status < 300) {
+    return response;} 
+    else {
+    throw err;
+    }
+}
+function login(){
+    
+    
+    let data={"id":1,"password":'1'};
+    fetch("http://39.97.228.101:8080/kuro/login",{
+        method: "POST",
+        body: JSON.stringify(data),
+    }).then(checkStatus).then(res => res.json()).then(function (response){
+        console.log(response)
+    })
+    
+}
+</script>
+</body>
+</html>

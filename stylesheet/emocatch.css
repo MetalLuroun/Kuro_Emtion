@@ -1,0 +1,297 @@
+body{
+  background: url(../background/打捞所有页面背景.jpg);
+  background-size: cover;
+}
+.content{
+  display: flex;
+  justify-content: center;
+
+}
+.header *{
+  margin: 1em;
+  color: #00000070;
+  font-size: 1.2em;
+}
+#catchbtn{
+  width: 26vw;
+  height: 26vw;
+  border: 2px solid transparent;
+  border-radius: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF99;
+  color: grey;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+#borderside{
+  position: absolute;
+  background-color: transparent;
+  z-index: 0;
+  top:60vh;
+  border: 3px solid white;
+  width: 29vw;
+  height: 29vw;
+  border-radius: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#switchblock{
+  border: 1px solid black;
+  background-color: white;
+  height: 4vh;
+  width: 25vw;
+  border-radius: 4vw;
+  position: absolute;
+  
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 17px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 17px;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.choice{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+}
+.choice p {
+  margin: 3vw;
+}
+.choice label{
+  margin: 3vw;
+}
+#leftmenu{
+  position: absolute;
+  height: 50vh;
+  top:5vh;
+  width: 70vw;
+  right: 0vw;
+  z-index:1;
+}
+#leftmenu::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../background/打捞所有页面背景.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+#emoCard{
+  position: absolute;
+  width: 80vw;
+  height: 60vh;
+  z-index: 2;
+  background-color:#BDCFD6;
+  top: 10vh;
+  left: 10vw;
+  top:20vh;
+}
+#emoCard *{
+  margin: 1vw;
+}
+#emoCard header{
+  width: 80vw;
+  height: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+.cardCotent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#time{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 2vh;
+  font-size: 18px;
+  color: white;
+}
+#star{
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 5vh;
+}
+#voice{
+  padding: 1vw;
+  display: inline-flex;
+  justify-content:flex-end ;
+  align-items: center;
+  height: 3vh;
+  width: 80%;
+  border-radius: 3vh;
+  background-color:#D7E4EA;
+}
+#image img{
+  height: 10vh;
+}
+#text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  overflow: auto;
+}
+#text p{
+  margin: 0;
+}
+#text img{
+  max-height: 40vw;
+}
+#buttonbox{
+  width: 90%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
+#buttonbox button{
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20vw;
+  background-color:#DFF0F8;
+  border: none;
+  font-size: 1.4em;
+  color: grey;
+}
+
+#fs{
+  align-self: center;
+  width: 14vw;
+  height: 14vw;
+  border-radius: 7vw;
+  position: relative;
+  left: 1em;
+  top: 1em;
+}
+#yn{
+  align-self: flex-start;
+}
+#pl{
+  align-self: flex-start;
+  
+}
+#menuheader{
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4vw;
+}
+#menuheader *{
+  margin:2vw
+}
+.footer{
+  background-color: white;
+}
+.footerbutton{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 3em;
+
+}
+.footerbutton *{
+  margin: 1vw;
+}
+#bottle img{
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+  top: -2vh;
+  left: 39vw;
+}
+#tag img{
+  width: 16vw;
+  height: 20vh;
+  margin: 0px;
+  
+}
+#tag div{
+  display: flex;
+  margin-top:-5vh;
+}
+#tag{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+ 
+}
+
+#deletebox {
+  width:100%;
+  height: 10vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#deletebox img {
+  width: 15vw;
+  height: 15vw;
+  padding: 2vw;
+  border: 2px solid black;
+  border-radius: 10vw;
+  background-color: white;
+}

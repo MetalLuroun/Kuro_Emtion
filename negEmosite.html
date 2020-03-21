@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="./stylesheet/negEmosite.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b818d1f379.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class='header'>
+        <i class="fas fa-arrow-left" id='back' onclick = "changeTo('personal')"></i>
+        <img src="./Design/铅笔@3x.png" id='pencil'>
+    </header>
+    <content class='content' >
+        <div id='search'>
+            <div>
+                <i class="fas fa-search"></i>
+                <input placeholder="请输入关键词">
+            </div>
+            <p>搜索</p>
+        </div>
+        <div id='message'>
+            <div>
+                <p id='p1'>还有</p>
+                <h2 id='h1'>9</h2>
+                <p id='p2'>条负面情绪在漂流</p>
+            </div>
+        </div>
+        <div id='saying'>
+            <div>
+                <p>有些坏心情,</p>
+                <p>可能永远释怀不了,</p>
+                <p>但可以选择去忘记,</p>
+                <p>然后,再一次轻装上阵.</p>
+            </div>
+        </div>
+    </content>
+    <footer class='footer '>
+        <div class='footerbutton'>
+                <img src='./Design/kongpingzi@3x.png' id='dl' onclick = "changeTo('emoCatch')" class='footericon'>
+                <p>打捞</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/wenzhang-3@3x.png' id='jl' onclick="turnTo('write')" class='footericon'>
+            <p>记录</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/资源-2@3x.png' id='wd'  class='footericon'>
+            <p>我的</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="./js/negEmosite.js"></script>
+<script src="func.js">
+</script>
+</html>

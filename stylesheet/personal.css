@@ -1,0 +1,93 @@
+body{
+    background: url('../background/导入3\ -登录注册-我的背景图.jpg');
+    background-size: cover;
+}
+.header{
+    height: 15vh;
+}
+.content{
+    width: 100vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#avatarbox{
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+   
+}
+#avatar{
+    height: 16vh;
+    width: 16vh;
+    border-radius: 10vh;
+    border: 2px solid brown;
+}
+#personalinf {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#personalinf div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#d1{
+    height: 4vh;
+}
+#idbox{
+    height: 3vh;
+}
+#emobox{
+    height: 6vh;
+    display: flex;
+   
+}
+#d2{
+    height: 3vh;
+}
+#featurebox {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#featurebox *{
+    display: flex;
+    justify-content: center;
+    
+}
+.choicebox{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    align-items: center;
+    background-color: #FFFFFF90;
+    height: 8vh;
+    margin: 2vw;
+    border-radius: 2vh;
+}
+#idbox img{
+    width: 4vw;
+    height: 4vw;
+    margin-left: 4vw;
+}
+#emobox img{
+    width: 4vw;
+    height: 4vw;
+    margin-left: 4vw;
+}
+#featurebox img{
+    width: 3vh;
+    height: 3vh;
+    position: relative;
+    right: 2vh;
+}

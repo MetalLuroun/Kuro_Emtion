@@ -1,0 +1,75 @@
+.header *{
+    margin:4vw;
+}
+.header img{
+    width: 4vh;
+    height: 4vh;
+}
+
+body{
+    background: url('../background/负情绪背景.jpg');
+    background-size: cover;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+
+#search{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search div{
+    height: 4vh;
+    border-radius: 2vh;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search *{
+    margin: 1vw;
+}
+#search input{
+    border: none;
+}
+#message{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message div{
+    display: flex;
+}
+
+#saying{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+}
+#saying div{
+    text-align: center;
+}
+#saying::after{
+    content: '';
+    background: url('../background/负情绪背景.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b818d1f379.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="./stylesheet/emocatch.css">
+    <link type="text/css" rel="stylesheet" href="./stylesheet/stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class='header'>
+        <i class="fas fa-arrow-left">首页</i>
+        <nav id='tag'>
+            <div id='tag1'>
+                <img src='./Design/tag1.png'>
+            </div>
+            <div id='tag2'>
+                <img src='./Design/tag2.png'>
+            </div>
+        </nav>
+        <i class="fas fa-bars fa-2x" id='menuButton'></i>
+    </header>
+    <content class='content'>
+        <div id='borderside'>
+            <div id='catchbtn'>
+                <p>打捞</p>
+            </div>
+        </div>
+    </content>
+    <nav id='leftmenu' class='hide'>
+        <div id='menuheader'>
+            <i class="fas fa-arrow-left" id='closeLeftMenu'></i>
+            <p>自定义打捞</p>
+        </div>
+        <div>
+            <div class="choice">
+                <p>完全随机打捞</p>
+                <label class="switch">
+                    <input type="radio" name='select' id = 'randomCatch' checked='checked'>
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <div class="choice">
+                <p>情绪值高的优先打捞</p>
+                <label class="switch">
+                    <input type="radio" name='select' id ='emoNumCatch'>
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <div class="choice">
+                <p>情绪值低的优先打捞</p>
+                <label class="switch">
+                    <input type="radio" name='select' id ='emoNumCatchRes'>
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <div class="choice">
+                <p>时间早的优先打捞</p>
+                <label class="switch">
+                    <input type="radio" name='select' id ='timeCatch'>
+                    <div class="slider"></div>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <article id='emoCard' class='hide' >
+        
+        <content class='cardCotent'>
+            <header>
+                <i class="fas fa-arrow-left" id='cardClose'></i>
+            </header>
+            <div id='time'>
+                <p>2020/03/10</p>
+                <p>18:40</p>
+            </div>
+            <div id='star'>
+                
+            </div>
+            <div id='voice'>
+                <audio src="" id = 'audio'></audio>
+            </div>
+            <div id='text'>
+                <img src="./image/1.jpeg" id = 'textImg'>
+                <p id = 'emoText'>今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...今天心情不好...</p>
+            </div>
+            <div id='buttonbox' class='hide'>
+                <button id='pl'>漂流</button>
+                <button id='fs'>粉碎</button>
+                <button id='yn'>悦纳</button>
+            </div>
+            <div id='deletebox' >
+                <img src="./Design/lajitong@3x.png">
+            </div>
+            <div id='bottle'>
+                <img src='./Design/11@3x.png'>
+            </div>
+        </content>
+    </article>
+    <footer class='footer '>
+        <div class='footerbutton'>
+                <img src='./Design/11@3x.png' id='dl'  class='footericon'>
+                <p>打捞</p>
+        </div>
+        <div class='footerbutton'>
+            <img src='./Design/wenzhang-3@3x.png' id='jl' onclick="turnTo('write')" class='footericon'>
+            <p>记录</p>
+        </div>
+        <div class='footerbutton'>
+                <img src='./Design/233@3x.png' id='wd' onclick="changeTo('personal')" class='footericon'>
+                <p>我的</p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="./js/emoCatch.js"></script>
+<script src="func.js">
+</script>
+</html>
